@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class testi1
+public class testi2
 {
     
 }
