@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "labyrintti.slnx"
+    "dotnet.defaultSolution": "Labyrintti.slnx"
 }
