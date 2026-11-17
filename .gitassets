@@ -1,0 +1,16 @@
+# Force LF line endings
+* text=auto eol=lf
+
+# Unity binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.psd binary
+*.fbx binary
+*.unity binary
+*.prefab binary
+*.asset binary
+*.controller binary
+*.mat binary
+*.meta text eol=lf
+*.asset text eol=lf
