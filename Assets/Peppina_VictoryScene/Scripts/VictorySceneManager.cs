@@ -2,10 +2,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 public class VictorySceneManager : MonoBehaviour
 {
-
 
     public GameObject victoryText;
     public GameObject restartButton;
@@ -19,9 +19,10 @@ public class VictorySceneManager : MonoBehaviour
 
  
 
-   //Lisättävä Labyrintti skenen nimi
-    public string gameSceneName = "GameScene";
-     //Lisättävä Main Menun nimi
+   // Labyrintti skenen nimi
+    public string gameSceneName = "MainScene";
+     
+   //Lisättävä Main Menu-valikon nimi
     public string mainMenuSceneName = "MainMenu";
 
 
@@ -43,26 +44,26 @@ public class VictorySceneManager : MonoBehaviour
      IEnumerator ShowVictoryButtons()
     {
         yield return new WaitForSeconds(2f);
+        restartButton.SetActive(true);
+        mainMenuButton.SetActive(true);
+
         restartButtonAnimator.Play("RestartButton_FadeIn");
         mainMenuButtonAnimator.Play("MainMenuButton_FadeIn");
 
-        restartButton.SetActive(true);
-        mainMenuButton.SetActive(true);
     }
 
 
-   //Lisättävä Labyrintti skenen nimi
+
     public void RestartGame()
     {
         SceneManager.LoadScene(gameSceneName);
+         Debug.Log("Game restarted!");
     }
 
-   //Lisättävä Main Menun nimi
     public void MainMenu()
     {
         SceneManager.LoadScene(mainMenuSceneName);
     }
-
 
 
     // Update is called once per frame

@@ -617,6 +617,7 @@ GameObject:
   - component: {fileID: 499000957}
   - component: {fileID: 499000961}
   - component: {fileID: 499000960}
+  - component: {fileID: 499000962}
   m_Layer: 5
   m_Name: RestartButton
   m_TagString: Untagged
@@ -772,6 +773,22 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!111 &499000962
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499000955}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &696003857
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,7 +900,7 @@ MonoBehaviour:
   whiteFadeAnimator: {fileID: 382866357}
   restartButtonAnimator: {fileID: 499000960}
   mainMenuButtonAnimator: {fileID: 280977848}
-  gameSceneName: GameScene
+  gameSceneName: MainScene
   mainMenuSceneName: MainMenu
 --- !u!4 &1058735456
 Transform:

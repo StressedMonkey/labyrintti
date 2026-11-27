@@ -11,6 +11,15 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("defeat_scene");
     }
 
+  public void WonGame()
+    {
+        Debug.Log("Peli voitettu");
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        SceneManager.LoadScene("VictoryScene");
+    }
+
+
     public void RestartGame()
     {
         Debug.Log("restart painettu");
