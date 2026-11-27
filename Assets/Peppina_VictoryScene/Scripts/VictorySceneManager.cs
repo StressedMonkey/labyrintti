@@ -6,21 +6,22 @@ using System.Collections;
 public class VictorySceneManager : MonoBehaviour
 {
 
-    [Header("Victory UI")]
+
     public GameObject victoryText;
     public GameObject restartButton;
     public GameObject mainMenuButton;
     public Animator victoryTextAnimator;
 
-    [Header("Fade Animation")]
+
     public Animator whiteFadeAnimator;
     public Animator restartButtonAnimator;
     public Animator mainMenuButtonAnimator;
 
-    [Header("Scenes")]
+ 
 
-
+   //Lisättävä Labyrintti skenen nimi
     public string gameSceneName = "GameScene";
+     //Lisättävä Main Menun nimi
     public string mainMenuSceneName = "MainMenu";
 
 
